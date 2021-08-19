@@ -1,3 +1,3 @@
-#fishtank {}
-.fish {}
-.fish_name {}
+import { FishList } from "./FishList.js";
+
+FishList();
