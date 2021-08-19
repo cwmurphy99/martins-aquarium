@@ -9,155 +9,115 @@ export const getFish = () => {
     return fishCollection
 }
 
-
 const fishCollection = [
     {
-        image: "fish.jpg",
-        species: "trigger",
         name: "Bart",
-        length: 7,
-        harvestLocation: "Costa Rica",
-        waterType: "Salt",
-        food: "crustaceans"
+        food: "crustaceans",
+		image: "bluefish.jpg",
+		species: "Trigger",
+		length: 7,
+		waterType: "Salt",
+		harvestLocation: "Costa Rica"
     },
-    {
-        image: "fish.jpg",
+	{
         name: "Mr Freeze",
-        species: "Tang",
-        length: 3,
-        harvestLocation: "Florida",
-        waterType: "Salt",
-        food: "Meal Worms"
+        food: "Meal Worms",
+		image: "cat.jpg",
+		species: "Tang",
+		length: 3,
+		waterType: "Salt",
+		harvestLocation: "Florida"
     },
-    {
+	{
         name: "Nemo",
         food: "Goldfish",
-        image: "blue.jpg",
+        image: "crazy-fish.jpg",
         species: "Clown",
         length: 3,
-        waterType: "Salt",
+        waterType: "Salt-water",
         harvestLocation: "Florida"
     },
-    {
+	{
         name: "Don Julio",
         food: "snails",
-        image: "stingray.jpg",
+        image: "dopeyfish.jpg",
         species: "Stingray",
         length: 9,
         waterType: "Salt",
         harvestLocation: "Dominican Republic"
     },
-    {
-        image: "fish.jpg",
-        name: "Eleanor",
-        species: "Angler",
-        length: 5,
-        harvestLocation: "North Carolina",
-        waterType: "Fresh",
-        food: "everything"
-    },
-    {
-        name: "Jeff",
-        food: "Forage Fish",
-        image: "green.jpg",
-        species: "Bluefish",
-        length: 3,
-        waterType: "Salt",
-        harvestLocation: "Australia"
-    },
-    {
+	{
         name: "Karen",
         food: "Algae",
-        image: "yellow.jpg",
+        image: "Gold.jpg",
         species: "Siamese algae eater",
         length: 5,
         waterType: "salt", 
         harvestLocation: "Puerto Rico"
-
     },
-    {
-        name: "Robin Gilliams",
-        food: "Bee Moths",
-        image: "orange.jpg",
-        species: "Clownfish",
-        length: 2,
-        waterType: "Salt",
-        harvestLocation: "Mexico"
-    },
-    {
-        name: "Three-Eyed Fish",
-        food: "worms",
-        image: "https://static.wikia.nocookie.net/simpsons/images/0/06/Blinky.jpg/revision/latest/scale-to-width-down/250?cb=20201209095035",
-        species: "Fictional",
-        length: 5,
-        waterType: "Salt",
-        harvestLocation: "Ohio"
-
-    },
-    {
-        name: "doctor fish",
-        food: "biofilm ",
-        image: "green.jpg",
-        species: "Tinca tinca",
-        length: 3.9,
-        waterType: "Fresh",
-        harvestLocation: "Massachusetts "
-        
-    },
-    {
-        name: "Beast",
-        food: "Shrimp",
-        image: "missing.jpg",
-        species: "Blobfish",
-        length: 10,
-        waterType: "salt",
-        harvestLocation: "Florida",
-    },
-    {
+	{
+		name: "Robin Gilliams",
+		food: "Bee Moths",
+		image: "orangefish.jpg",
+		species: "Clownfish",
+		length: 2,
+		waterType: "Salt",
+		harvestLocation: "Mexico"
+	},
+	{
         name: "Bruce",
         food: "not fish",
-        image: "bruce.jpg",
+        image: "pinkfish.jpeg",
         species: "greatWhite",
         length: 130,
         waterType: "salt",
         harvestLocation: "Sydney"
     },
-    {
+	{
+        name: "Bloat",
+        food: "shrimp",
+        image: "purplefish.jpg",
+        species: "Blow Fish",
+        length: 5,
+        waterType: "Salt",
+        harvestLocation: "Mexico"
+    },
+	{
         name: "Gordon",
         food: "Krill",
-        image: "pink.jpg",
+        image: "yellowbluefish.jpg",
         species: "Blowfish",
         length: 3,
         waterType: "Salt",
         harvestLocation: "Asia"
     },
     {
-        name: "Garfield",
-        food: "pellets",
-        image: "catfish.jpg",
-        species: "catfish",
-        length: 12,
-        waterType: "Fresh",
-        harvestLocation: "Louisiana"
+        name: "Jack",
+        food: "other fish",
+        image: "stripedJellyfish.jpg",
+        species: "Striped Jellyfish",
+        length: 36,
+        waterType: "Salt",
+        harvestLocation: "Tennessee"
     },
     {
-        image: "fish.jpg",
-        species: "trigger",
         name: "Jeremy",
-        length:47,
-        harvestLocation: "Hawaii",
+        food: "crustacean",
+        image: "Triggerfish.jpg",
+        species: "Trigger",
+        length: 4,
         waterType: "Salt",
-        food: "crustaceans"
+        harvestLocation: "Hawaii"
     },
     {
-        image: "fish.jpg",
-        species: "trigger",
         name: "Jeremy Bearimy",
-        length: 10,
-        harvestLocation: "England",
-        waterType: "Salt",
-        food: "crustaceans"
-    },
+        food: "Lucky Charms",
+        image: "pinkfish.jpeg",
+        species: "Something Bright",
+        length: 8,
+        waterType: "Fresh",
+        harvestLocation: "Kentucky"
+    }
 ]
 
 
