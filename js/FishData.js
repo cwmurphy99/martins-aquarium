@@ -9,35 +9,75 @@ export const getFish = () => {
     return fishCollection
 }
 
+export const getMostHolyFish = () => {
+    const holyFishArray = []
+    //3, 6, 9, 12, etc...fish
+    for (const fishTaco of fishCollection) {
+        if (fishTaco.length % 3 === 0) {
+            holyFishArray.push(fishTaco);
+        }
+
+    }
+
+    return holyFishArray;
+}
+
+export const getSoldierFish = () => {
+    const soldierFishArray = [];
+    //5, 10, 15, 20, etc...fish
+    for (const fishObj of fishCollection) {
+        if (fishObj.length % 5 === 0) {
+            soldierFishArray.push(fishObj);
+        }
+    }
+
+    return soldierFishArray;
+}
+
+export const getUnworthyFish = () => {
+    const unworthyFishArray = [];
+    // Any fish not a multiple of 3 or 5
+    for (const fishGills of fishCollection) {
+        if (fishGills.length % 5 !== 0 || fishGills.length % 3 !== 0) {
+            unworthyFishArray.push(fishGills);
+        }
+    }
+    return unworthyFishArray
+}
+
+
+
+
+
 const fishCollection = [
     {
         name: "Bart",
         food: "crustaceans",
-		image: "bluefish.jpg",
-		species: "Trigger",
-		length: 7,
-		waterType: "Salt",
-		harvestLocation: "Costa Rica"
+        image: "bluefish.jpg",
+        species: "Trigger",
+        length: 7,
+        waterType: "Salt",
+        harvestLocation: "Costa Rica"
     },
-	{
+    {
         name: "Mr Freeze",
         food: "Meal Worms",
-		image: "cat.jpg",
-		species: "Tang",
-		length: 3,
-		waterType: "Salt",
-		harvestLocation: "Florida"
+        image: "cat.jpg",
+        species: "Tang",
+        length: 3,
+        waterType: "Salt",
+        harvestLocation: "Florida"
     },
-	{
+    {
         name: "Nemo",
         food: "Goldfish",
-        image: "crazy-fish.jpg",
+        image: "clownFish.jpg",
         species: "Clown",
-        length: 3,
+        length: 17,
         waterType: "Salt-water",
         harvestLocation: "Florida"
     },
-	{
+    {
         name: "Don Julio",
         food: "snails",
         image: "dopeyfish.jpg",
@@ -46,46 +86,46 @@ const fishCollection = [
         waterType: "Salt",
         harvestLocation: "Dominican Republic"
     },
-	{
+    {
         name: "Karen",
         food: "Algae",
         image: "Gold.jpg",
         species: "Siamese algae eater",
         length: 5,
-        waterType: "salt", 
+        waterType: "salt",
         harvestLocation: "Puerto Rico"
     },
-	{
-		name: "Robin Gilliams",
-		food: "Bee Moths",
-		image: "orangefish.jpg",
-		species: "Clownfish",
-		length: 2,
-		waterType: "Salt",
-		harvestLocation: "Mexico"
-	},
-	{
+    {
+        name: "Robin Gilliams",
+        food: "Bee Moths",
+        image: "robinGilliams.jpg",
+        species: "Clownfish",
+        length: 2,
+        waterType: "Salt",
+        harvestLocation: "Mexico"
+    },
+    {
         name: "Bruce",
         food: "not fish",
-        image: "pinkfish.jpeg",
+        image: "bruce.jpg",
         species: "greatWhite",
         length: 130,
         waterType: "salt",
         harvestLocation: "Sydney"
     },
-	{
+    {
         name: "Bloat",
         food: "shrimp",
-        image: "purplefish.jpg",
+        image: "ultraBlack.jpg",
         species: "Blow Fish",
-        length: 5,
+        length: 11,
         waterType: "Salt",
         harvestLocation: "Mexico"
     },
-	{
+    {
         name: "Gordon",
         food: "Krill",
-        image: "yellowbluefish.jpg",
+        image: "puffer.jpg",
         species: "Blowfish",
         length: 3,
         waterType: "Salt",
@@ -105,7 +145,7 @@ const fishCollection = [
         food: "crustacean",
         image: "Triggerfish.jpg",
         species: "Trigger",
-        length: 4,
+        length: 13,
         waterType: "Salt",
         harvestLocation: "Hawaii"
     },
@@ -114,7 +154,7 @@ const fishCollection = [
         food: "Lucky Charms",
         image: "pinkfish.jpeg",
         species: "Something Bright",
-        length: 8,
+        length: 15,
         waterType: "Fresh",
         harvestLocation: "Kentucky"
     }

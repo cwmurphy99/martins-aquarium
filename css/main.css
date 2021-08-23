@@ -55,8 +55,23 @@ nav a:active {
 .fishList{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;	
+	justify-content: space-evenly;
 }
+
+
+.fishFingers {
+	background-color: aqua;
+	color: darkblue;
+	border: solid darkblue 2px;
+}
+.fishTips {
+	text-align: center;
+}
+.tipsList {
+	color: darkblue;
+	padding: 10%;
+}
+
 
 .fish-card {
 	background-color: lightcyan;
